@@ -12,6 +12,6 @@ public class AdminController {
 
     @RequestMapping(value = "user",method = RequestMethod.GET)
     public String queryUserName(String userName){
-        return "你获取的姓名是："+userName;
+        return "你获取的姓名是："+userName+",您访问的端口是："+port;
     }
 }

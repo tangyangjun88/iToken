@@ -9,6 +9,7 @@
         <module name="itoken-config" />
         <module name="itoken-eureka" />
         <module name="itoken-spring-cloud-web-admin-feign" />
+        <module name="itoken-spring-cloud-zuul" />
         <module name="itoken-spring-service-admin" />
       </profile>
     </annotationProcessing>
@@ -18,6 +19,7 @@
       <module name="itoken-eureka" target="1.8" />
       <module name="itoken-spring-cloud-service-admin" target="1.8" />
       <module name="itoken-spring-cloud-web-admin-feign" target="1.8" />
+      <module name="itoken-spring-cloud-zuul" target="1.8" />
       <module name="itoken-spring-service-admin" target="1.8" />
     </bytecodeTargetLevel>
   </component>
@@ -27,6 +29,7 @@
       <module name="itoken-eureka" options="-parameters" />
       <module name="itoken-spring-cloud-service-admin" options="-parameters" />
       <module name="itoken-spring-cloud-web-admin-feign" options="-parameters" />
+      <module name="itoken-spring-cloud-zuul" options="-parameters" />
       <module name="itoken-spring-service-admin" options="-parameters" />
     </option>
   </component>
