@@ -11,9 +11,10 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/tangyangjun88/springcloud-config.git
+          uri: https://github.com/tangyangjun88/iToken.git
           username: tangyangjun88@163.com
           password: tyj19880818
+          search-paths: config
       label: master
 server:
   port: 8888

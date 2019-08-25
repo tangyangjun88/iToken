@@ -10,10 +10,10 @@
         <relativePath>../itoken-dependencies/pom.xml</relativePath>
     </parent>
 
-    <artifactId>itoken-eureka</artifactId>
+    <artifactId>itoken-spring-service-admin</artifactId>
     <packaging>jar</packaging>
 
-    <name>itoken-eureka</name>
+    <name>itoken-spring-service-admin</name>
     <inceptionYear>2019-Now</inceptionYear>
 
     <dependencies>
@@ -31,10 +31,6 @@
             <artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
         </dependency>
         <!-- Spring Cloud End -->
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-config</artifactId>
-        </dependency>
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-zipkin</artifactId>
@@ -55,7 +51,7 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
-                    <mainClass>com.tyj.itoken.spring.cloud.eureka.EurekaApplication</mainClass>
+                    <mainClass>com.tyj.itoken.spring.cloud.service.admin.ServiceAdminApplication</mainClass>
                 </configuration>
             </plugin>
         </plugins>
