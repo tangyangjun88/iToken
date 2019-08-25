@@ -10,10 +10,10 @@
         <relativePath>../itoken-dependencies/pom.xml</relativePath>
     </parent>
 
-    <artifactId>itoken-spring-service-admin</artifactId>
+    <artifactId>itoken-spring-cloud-web-admin-feign</artifactId>
     <packaging>jar</packaging>
 
-    <name>itoken-spring-service-admin</name>
+    <name>itoken-spring-cloud-web-admin-feign</name>
     <inceptionYear>2019-Now</inceptionYear>
 
     <dependencies>
@@ -31,6 +31,18 @@
             <artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
         </dependency>
         <!-- Spring Cloud End -->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-openfeign</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-hystrix</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-hystrix-dashboard</artifactId>
+        </dependency>
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-config</artifactId>
@@ -55,7 +67,7 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
-                    <mainClass>com.tyj.itoken.spring.cloud.service.admin.ServiceAdminApplication</mainClass>
+                    <mainClass>com.tyj.itoken.spring.cloud.web.admin.feign.WebAdminFeignApplication</mainClass>
                 </configuration>
             </plugin>
         </plugins>
