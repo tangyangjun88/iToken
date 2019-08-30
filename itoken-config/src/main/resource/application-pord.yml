@@ -1,0 +1,29 @@
+spring:
+  application:
+    name: itoken-spring-cloud-config
+  zipkin:
+    base-url: http://${eureka.instance.hostname}:8769
+  boot:
+    admin:
+      client:
+        url: http://${eureka.instance.hostname}:8770
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/tangyangjun88/iToken.git
+          username: tangyangjun88@163.com
+          password: tyj19880818
+          search-paths: config
+      label: master
+server:
+  port: 8888
+
+
+eureka:
+  instance:
+    hostname: 192.168.80.139
+  client:
+    service-url:
+      defaultZone: http://${eureka.instance.hostname}:8761/eureka/
+
